@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "django_project"
+version = "0.1.0"
+description = ""
+authors = ["Niels Lemmens <draso.odin@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+django = "*"
+gunicorn = "*"
+uvicorn = "*"
+psycopg2-binary = "*"
+whitenoise = "*"
+django-debug-toolbar = "*"
+boto3 = "*"
+
+[tool.poetry.dev-dependencies]
+flake8 = "*"
+isort = "*"
+black = "19.10b0"
+pre-commit = "*"
+coverage = "*"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
